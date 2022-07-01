@@ -1,0 +1,83 @@
+body, html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    min-height: 30em;
+    min-width: 25em;
+    height: 80%;
+    width: 30%;
+    background-color: darkgrey;
+    border: solid 1px black;
+    border-radius: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 20%;
+    width:90%;
+    background-color: rgb(93, 97, 97);
+    border: solid 1px black;
+    border-radius: 2%;
+    margin: 5%;
+}
+
+.resultado{
+    margin: 3%;
+    font-size: 4rem;
+    color: white;
+}
+
+.teclado{
+    width: 90%;
+    height: 70%;
+    margin: 5%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(4, 23.5%);
+    grid-template-rows: repeat(5, 18%);
+}
+
+.botao{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(106, 110, 110);
+    color: white;
+    border: solid 1px black;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+.botao.maior{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.botao.operacao{
+    background-color: rgb(240, 85, 24);
+}
+
+.botao.reset{
+    color: black;
+    opacity: 30%;
+}
+
+.botao:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
