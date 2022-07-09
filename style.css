@@ -71,9 +71,8 @@ body{
     background-color: rgb(240, 85, 24);
 }
 
-.botao.reset{
-    color: black;
-    opacity: 30%;
+.botao.maior.reset{
+    background-color: rgb(95, 95, 228);
 }
 
 .botao:hover{
